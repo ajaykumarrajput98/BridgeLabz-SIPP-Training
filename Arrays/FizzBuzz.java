@@ -16,7 +16,7 @@ public class FizzBuzz {
         String[] results = new String[number + 1];
 
         for (int i = 0; i <= number; i++) {
-            if (i % 3 == 0 && i % 5 == 0 && i != 0) {
+            if (i % 3 == 0 && i % 5 == 0 && i != 0 ) {
                 results[i] = "FizzBuzz";
             } else if (i % 3 == 0 && i != 0) {
                 results[i] = "Fizz";
