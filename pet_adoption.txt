@@ -1,0 +1,67 @@
+1)pet adoption : design classes for pet, dog, cat and bird .use inheritance and constructor to initialize them.
+
+here is the solution for given problem:-
+
+.................................................................................................................................................
+.................................................................................................................................................
+
+class Pet
+    attribute:
+        name
+        age
+        breed
+
+    constructor(name, age, breed):
+        SET name = name
+           SET age = age
+          SET breed = breed
+
+     method displayInfo():
+        print "Name:", self.name
+          print "Age:", self.age
+         print "Breed:", self.breed
+
+
+ class Dog extends Pet
+    attribute:isTrained
+
+     constructor(name, age, breed, isTrained):
+        call super(name, age, breed)
+         SET self.isTrained = isTrained
+
+    method displayInfo():
+        call super.displayInfo()
+        print "Trained:", self.isTrained
+
+
+  class Cat extends Pet
+    attribute:isHouseHold
+
+    constructor(name, age, breed, HouseHold):
+        call super(name, age, breed)
+         SET self.isIndoor = isIndoor
+
+    method displayInfo():
+        call super.displayInfo()
+        print "Indoor Cat:", self.isIndoor
+
+
+class Bird extends Pet
+    attribute:
+        canFly
+
+    constructor(name, age, breed, canFly):
+        call super(name, age, breed)
+        SET self.canFly = canFly
+
+    method displayInfo():
+        call super.displayInfo()
+        print "Can Fly:", self.canFly
+
+Create dog1 = Dog("Buddy", 3, "Golden Retriever", true)
+  Create cat1 = Cat("Whiskers", 2, "Persian", true)
+Create bird1 = Bird("Tweedy", 1, "Canary", true)
+
+call dog1.displayInfo()
+  call cat1.displayInfo()
+ call bird1.displayInfo()
