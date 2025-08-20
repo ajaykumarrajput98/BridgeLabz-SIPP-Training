@@ -1,0 +1,28 @@
+membership accoring to the membership duration and exprirydate.
+...............................................................
+...............................................................
+START
+
+Class Member
+    Attributes
+         name String
+          id Integer
+          membershipDate: Date
+         membershipDuration: Integer
+    Constructor(name, id, membershipDate, membershipDuration)
+         Set this.name = name
+           Set this.id = id
+          Set this.membershipDate = membershipDate
+         Set this.membershipDuration = membershipDuration
+Method isMembershipValid(currentDate)
+           Calculate expiryDate = membershipDate + membershipDuration
+          If currentDate = expiryDate
+             Return true
+          Else
+             Return false
+   Method displayMemberInfo()
+         Print "Name " + name
+           Print "ID " + id
+         Print "Membership Date: " + membershipDate
+          Print "Membership Duration" + membershipDuration + " months"
+END
