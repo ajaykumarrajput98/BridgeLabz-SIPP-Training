@@ -1,2 +1,2 @@
 # BridgeLabz-SIPP-Training
-this for just a knowledge purpose 
+this is for just a knowledge purpose 
